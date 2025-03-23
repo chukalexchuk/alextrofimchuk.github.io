@@ -1,218 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<!-- SITE TITLE -->
-	<title>Alex Trofimchuk: my portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Trofimchuk | Data Engineer Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Raleway", sans-serif;
+        transition: background 0.3s, color 0.3s;
+      }
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>           
-<!-- 
+      body {
+        margin: 0;
+        background-color: #121212;
+        color: #e0e0e0;
+        line-height: 1.6;
+        font-size: 16px;
+      }
 
-Ultra Profile
+      header {
+        padding: 2rem;
+        text-align: center;
+        background: #1e1e1e;
+      }
 
-https://templatemo.com/tm-464-ultra-profile
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
 
--->
-</head>
-<body data-spy="scroll" data-target="#rock-navigation">
-	<!-- START NAVIGATION -->
-	<div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
-		<div class="container">
+      nav {
+        background: #222;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+      }
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">My Portfolio</a>
-			</div>
-			<nav class="collapse navbar-collapse" id="rock-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
-					<li><a href="#home" class="smoothScroll">Home</a></li>
-					<li><a href="#work" class="smoothScroll">My Projects</a></li>
-					<li><a href="#resume" class="smoothScroll">Resume</a></li>
-					<li><a href="#about" class="smoothScroll">About me</a></li>
-				</ul>
-			</nav>
+      nav a {
+        color: #bbb;
+        text-decoration: none;
+        font-weight: 600;
+      }
 
-		</div>
-	</div>
-	<!-- END NAVIGATION -->
+      nav a:hover {
+        color: #fff;
+      }
 
-	<!-- START HOME -->
-	<section id="home" class="templatemo-home">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong>Alex Trofimchuk</strong></h1>
-					<h2 class="tm-home-subtitle">Data Science and Engineering</h2>
-					<p>I am passionate about <strong>Data</strong> and <strong>Sustainability</strong> </p>
-					<a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>
-				</div>
-				<div class="col-md-2 col-sm-1"></div>
-			</div>
-		</div>
-	</section>
-	<!-- END HOME -->
+      section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
 
-	<!-- START my projects -->
-	<section id="work" class="tm-padding-top-bottom-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-1 col-md-11">
-					<h2 class="title">My <strong>Projects</strong></h2>						
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="work-wrapper">
-						<i class="fa fa-leaf"></i>
-						<h3 class="text-uppercase tm-work-h3">Green House Gas emissions calculator</h3>
-						<a href="https://share.streamlit.io/chukalexchuk/ghg_emissions/app.py" target="_blank">Check the app</a>
-						<hr>
-						<p>Web application made with Streamlit in Python to calculate GHG emissions for a New Zealand business.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="work-wrapper">
-						<i class="fa fa-money"></i>
-						<h3 class="text-uppercase tm-work-h3">Budget</h3>
-						<a href="https://chukalexchuk-budget-app-ntaf9e.streamlitapp.com/" target="_blank">Check the app</a>
-						<hr>
-						<p>Natural Language Processing ML app to categorise your spending. Python libraries: Pandas, Plorly, Scikit-Learn, SpaCy.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="work-wrapper">
-						<i class="fa fa-bar-chart"></i>
-						<h3 class="text-uppercase tm-work-h3">Data Engineering Jobs</h3>
-						<a href="https://share.streamlit.io/chukalexchuk/web-scraping/main/app.py" target="_blank">Check the app</a>
-						<hr>
-						<p>Web scraping app in Python to get available jobs in Data Engineering. Python libraries: BeautifulSoup, Geopy, Requests and Pandas.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="work-wrapper">
-						<i class="fa fa-calculator"></i>
-						<h3 class="text-uppercase tm-work-h3">Plant a tree - ML calculator</h3>
-						<a href="https://chukalexchuk.github.io/machine_learning/" target="_blank">Check the app</a>
-						<hr>
-						<p>Web application made with TensorFlow to predict handwritten digits.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END my projects -->
+      h2 {
+        border-bottom: 2px solid #444;
+        padding-bottom: 0.5rem;
+      }
 
-	<!-- START RESUME -->
-	<section id="resume" class="tm-padding-top-bottom-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">					
-					<h2 class="title">My <strong>Profile</strong></h2>
-					<p><span class="tm-info-label">Address</span> Christchurch, New Zealand</p>
-					<p><span class="tm-info-label">Phone</span> 0204 182 0529</p>
-					<p><span class="tm-info-label">Email</span> chukalexchuk@gmail.com</p>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<h2 class="title"><strong>Skills</strong> </h2>
-					<li>Fluency in Python (incl. Pandas, Plotly, Streamlit, Machine Learning and other libraries)</li>
-					<li>Basic knowledge of Go, JS, TS, HTML, CSS</li>	
-					<li>Advanced knowledge of SQL and database concepts</li>
-					<li>Cloud Services: AWS, Azure</li>
-					<li>Snowflake (Snowflake Apps, ML pipelines), dbt, Terrafrom, Docker</li>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<h2 class="title"><strong>Courses</strong>  and <strong>Certifications</strong></h2>
-					<li><strong>The Complete dbt (Data Build Tool) Bootcamp: Zero to Hero</strong> - 2023</li>
-					<li><strong>AWS Cloud Practitioner Essentials</strong> - 2022</li>
-					<li><strong>Snowflake - The Complete Masterclass</strong> - 2022</li>
-					<li><strong>Data Science & Machine Learning with Python</strong> - 2022</li>
-					<li><strong>100 Days of Code: The Complete Python Pro Bootcamp</strong> - 2021</li>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END RESUME -->
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
 
-	<!-- START ABOUT -->
-	<section id="about" class="tm-about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-7">
-					<div class="title">
-						<h2>This is <strong>me</strong></h2>
-						<h1 class="tm-red-text">Data <strong>Engineer</strong></h1>
-					</div>
-					<p>I learned to code with different online courses, stackoverflow and just googling my errors. Each project has added new skills to my knowledge.</p>
-					<p>Analytical mindset, math skills, including statistics. Excel at data transformation and analysis. Always ready to learn new skills.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END ABOUT -->
+      .project-card {
+        background: #1e1e1e;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #333;
+      }
 
-	<!-- START SOCIAL -->
-	<section id="social" class="tm-social">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.3s">
-					<div class="media linkedin">
-						<a href="#">
-							<div class="media-object pull-left">
-								<i class="fa fa-linkedin"></i>
-							</div>
-							<div class="media-body">
-								<a href="https://www.linkedin.com/in/alextrofimchuk/">LinkedIn</a>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.6s">
-					<div class="media github">
-						<a href="#">
-							<div class="media-object pull-left">
-								<i class="fa fa-github"></i>
-							</div>
-							<div class="media-body">
-								<a href="https://github.com/chukalexchuk">GitHub</a>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.9s">
-					<div class="media gitlab">
-						<a href="#">
-							<div class="media-object pull-left">
-								<i class="fa fa-gitlab"></i>
-							</div>
-							<div class="media-body">
-								<a href="https://gitlab.com/chukalexchuk">GitLab</a>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END SOCIAL -->
+      .project-card a {
+        color: #4dd0e1;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="js/isotope.js"></script>
-	<script src="js/imagesloaded.min.js"></script>
-	<script src="js/custom.js"></script>
-</body>
+      .skills li {
+        list-style: square;
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background: #1e1e1e;
+        color: #aaa;
+      }
+
+      .socials a {
+        margin: 0 1rem;
+        color: #4dd0e1;
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+
+      .toggle-btn {
+        cursor: pointer;
+        background: #333;
+        border: none;
+        color: #ccc;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin: 1rem auto;
+        display: block;
+      }
+
+      body.light {
+        background-color: #f4f4f4;
+        color: #222;
+      }
+
+      body.light nav {
+        background: #eee;
+      }
+
+      body.light nav a {
+        color: #333;
+      }
+
+      body.light header {
+        background: #ddd;
+        color: #222;
+      }
+
+      body.light section {
+        background: #fff;
+        color: #222;
+      }
+
+      body.light .project-card {
+        background: #fafafa;
+        border-color: #ccc;
+      }
+
+      body.light footer {
+        background: #ddd;
+        color: #222;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Alex Trofimchuk</h1>
+      <p>Data Engineer | Passionate about Data & Sustainability</p>
+    </header>
+
+    <button class="toggle-btn" onclick="toggleDarkMode()">
+      Toggle Dark Mode
+    </button>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Data Engineer with hands-on experience building scalable data
+        solutions, robust ETL pipelines, and infrastructure on AWS and Snowflake
+        using Terraform. My journey started in mechanical engineering, where I
+        developed analytical thinking and problem-solving skills. Over time, I
+        transitioned into data engineering and software development, focusing on
+        data transformation, machine learning, and cloud infrastructure.
+      </p>
+      <p>
+        Currently, I am enhancing my software engineering skills at Xero,
+        building microservices and tools to make data more discoverable.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>GHG Emissions Calculator</h3>
+          <p>
+            Streamlit app to calculate greenhouse gas emissions for NZ
+            businesses.
+          </p>
+          <a
+            href="https://share.streamlit.io/chukalexchuk/ghg_emissions/app.py"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Budget NLP App</h3>
+          <p>
+            ML app categorising your expenses using NLP, built with Pandas,
+            Plotly, Scikit-learn, SpaCy.
+          </p>
+          <a
+            href="https://chukalexchuk-budget-app-ntaf9e.streamlitapp.com/"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Data Engineering Jobs Scraper</h3>
+          <p>Python app that scrapes job listings in data engineering.</p>
+          <a
+            href="https://share.streamlit.io/chukalexchuk/web-scraping/main/app.py"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Plant a Tree - ML Calculator</h3>
+          <p>TensorFlow web app predicting handwritten digits.</p>
+          <a
+            href="https://chukalexchuk.github.io/machine_learning/"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Certifications</h2>
+      <ul class="skills">
+        <li>Python (Pandas, Plotly, Streamlit, Machine Learning)</li>
+        <li>SQL (Advanced)</li>
+        <li>Go, JavaScript, TypeScript, HTML, CSS</li>
+        <li>Cloud: AWS, Azure</li>
+        <li>Snowflake (Snowflake Apps, ML pipelines), dbt</li>
+        <li>Terraform, Docker</li>
+        <li><strong>Certifications:</strong></li>
+        <li>The Complete dbt Bootcamp (2023)</li>
+        <li>AWS Cloud Practitioner Essentials (2022)</li>
+        <li>Snowflake Masterclass (2022)</li>
+        <li>Data Science & ML with Python (2022)</li>
+        <li>100 Days of Python (2021)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: chukalexchuk@gmail.com</p>
+      <p>Location: Christchurch, New Zealand</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/alextrofimchuk/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/chukalexchuk" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://gitlab.com/chukalexchuk" target="_blank"
+          ><i class="fab fa-gitlab"></i
+        ></a>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Alex Trofimchuk | Built with ❤️ and Python</footer>
+
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("light");
+      }
+    </script>
+  </body>
 </html>
